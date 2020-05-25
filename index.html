@@ -1,1 +1,29 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Queenie Lau">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queenie Lau</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kvc1jlq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kvc1jlq.css">
+  </head>
+  <body>
+    <div class="loader">
+      <img id="underline" src="underline.gif" alt = "Underline" style ="mix-blend-mode: screen; opacity:50%;"/>
+      <div class="loading">
+        <h1>Loading</h1>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+      });
+    </script>
+
+
+  </body>
+</html>

@@ -1,4 +1,11 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
   font-family: lust-script,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -16,15 +23,18 @@ body {
   font-family: proxima-nova,sans-serif;
   font-weight: 400;
   font-style: normal;
+
+  background-image: linear-gradient(90deg, #CCCCD9, #50758C);
+  background-attachment: fixed;
 }
 
 .loader {
   position: fixed;
   z-index: 99;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   background-image: linear-gradient(-90deg, #CCCCD9, #F2F0F0);
   display: flex;
   justify-content: center;
@@ -42,7 +52,7 @@ body {
 
 .loading {
   color: white;
-  text-shadow: 1.5px -1.5px 3px #888888;
+  text-shadow: 1.5px -1.5px 3px #B8B8C4;
   text-transform: uppercase;
   letter-spacing: 9px;
   position: absolute;
@@ -64,4 +74,63 @@ body {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+
+
+.drop-down {
+  /* background-color: red; */
+
+}
+
+a, ul, li {
+  padding-right: 12px;
+  padding-left: 12px;
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+
+.left-links {
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.q-logo {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 8px;
+  left: 16px;
+
+}
+
+#q {
+  font-family: lust-script,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 120px;
+  transition-timing-function: ease;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
+#q:hover {
+  font-weight: 500;
+  -webkit-text-fill-color: white;
+
 }

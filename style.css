@@ -29,7 +29,7 @@ html, body {
   font-weight: 100;
   font-style: normal;
 
-  background-image: linear-gradient(90deg, #CCCCD9, #50758C);
+  background-image: repeating-linear-gradient(90deg, #CCCCD9, #50758C);
   background-attachment: fixed;
 }
 
@@ -110,7 +110,7 @@ a:hover {
 nav {
     text-transform: uppercase;
     letter-spacing: .2rem;
-    font-size: .95em;
+    font-size: .9em;
     display: flex;
     align-items: right;
     justify-content: center;
@@ -127,6 +127,12 @@ nav {
   margin-top: 3%;
 }
 
+.social-links {
+  letter-spacing: .2rem;
+  white-space: nowrap;
+}
+
+
 
 .q-logo {
   display: flex;
@@ -136,8 +142,6 @@ nav {
   justify-content: center;
   top: 5%;
   left: 5%;
-
-
 }
 
 #q {
@@ -160,11 +164,16 @@ nav {
   -ms-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-
 }
 
-
-.social-links {
-  letter-spacing: .2rem;
-  white-space: nowrap;
+.middle-pic {
+  mix-blend-mode: overlay;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }

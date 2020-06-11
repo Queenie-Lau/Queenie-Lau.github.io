@@ -31,6 +31,8 @@ html, body {
 
   background-image: repeating-linear-gradient(90deg, #CCCCD9, #50758C);
   background-attachment: fixed;
+  cursor: crosshair;
+
 }
 
 .loader {

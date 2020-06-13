@@ -31,7 +31,7 @@ html, body {
 
   background-image: repeating-linear-gradient(90deg, #CCCCD9, #50758C);
   background-attachment: fixed;
-  cursor: crosshair;
+  cursor: url('https://i.ya-webdesign.com/images/pointer-transparent-white-hand-13.png'), default;
 
 }
 

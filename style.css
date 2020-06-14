@@ -181,18 +181,25 @@ nav {
 
 .profile-pic {
   margin: 100px;
-  padding: 100px;
+  padding-top: 100px;
+  padding-left: 100px;
   display: flex;
   justify-content: center;
+  /* width: 50%;
+  min-width:100px; */
 }
 
 #prof-pic-shadow {
   transform: translateX(-100%);
+  width: auto;
+  height: 100%;
 }
 
 #prof-pic {
   z-index: 1;
   transform: scale(1.2);
+  width: auto;
+  height: 100%;
 }
 
 #first, #second {
@@ -202,6 +209,7 @@ nav {
   color: white;
   line-height: 2;
   margin-right: 15%;
+  font-size:.8vw;
 }
 
 #first a, #second a {

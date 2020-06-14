@@ -135,7 +135,6 @@ nav {
 }
 
 
-
 .q-logo {
   display: flex;
   position: absolute;
@@ -198,6 +197,19 @@ nav {
 
 #first, #second {
   font-family: proxima-nova, sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
+  color: white;
+  line-height: 2;
+  margin-right: 15%;
+}
+
+#first a, #second a {
+  transition: underline 0.5s ease-in-out;
+  text-decoration: underline;
+  color: #0D0000;
+}
+
+#first {
+  margin-bottom: 2%;
 }

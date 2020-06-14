@@ -31,7 +31,7 @@ html, body {
 
   background-image: repeating-linear-gradient(90deg, #CCCCD9, #50758C);
   background-attachment: fixed;
-  cursor: url('https://i.ya-webdesign.com/images/pointer-transparent-white-hand-13.png'), default;
+
 
 }
 
@@ -178,4 +178,26 @@ nav {
   height: auto;
   display: flex;
   justify-content: center;
+}
+
+.profile-pic {
+  margin: 100px;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#prof-pic-shadow {
+  transform: translateX(-100%);
+}
+
+#prof-pic {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
+#first, #second {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }

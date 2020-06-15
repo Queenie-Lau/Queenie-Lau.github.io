@@ -198,10 +198,17 @@ nav {
 #prof-pic {
   z-index: 1;
   transform: scale(1.2);
+  object-fit: contain;
   width: auto;
   height: 100%;
+
 }
 
+.bio {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
 #first, #second {
   font-family: proxima-nova, sans-serif;
   font-weight: 200;
@@ -220,4 +227,31 @@ nav {
 
 #first {
   margin-bottom: 2%;
+}
+
+.works-list {
+  margin: 100px;
+  padding: 40px;
+}
+
+.dots a {
+  border-radius: 100%;
+  border: 2px solid #fff;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1.5rem;
+  width: 12px;
+  height: 12px;
+}
+
+.footer {
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  padding: 0 8rem;
 }

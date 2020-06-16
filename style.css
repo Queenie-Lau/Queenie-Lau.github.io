@@ -367,3 +367,16 @@ dl {
 .email-address {
   margin-bottom: 20%;
 }
+
+footer {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 50px;
+  color: white;
+  text-align: center;
+  mix-blend-mode: soft-light;
+}

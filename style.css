@@ -9,6 +9,7 @@ html, body {
   font-family: lust-script,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: white;
 
   /* font-family: lust-script-display,sans-serif;
   font-weight: 400;
@@ -84,12 +85,12 @@ html, body {
 }
 
 a, ul, li {
-  padding-right: 12px;
-  padding-left: 12px;
   text-decoration: none;
   list-style: none;
   display: inline-flex;
   color: white;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 a:hover {
@@ -100,7 +101,6 @@ a:hover {
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-
 
 .header {
   text-align: center;
@@ -117,6 +117,7 @@ nav {
     align-items: right;
     justify-content: center;
 }
+
 
 .left-links {
   height: 100%;
@@ -172,7 +173,7 @@ nav {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 8%;
   width: 100%;
   height: auto;
   display: flex;
@@ -229,14 +230,22 @@ nav {
   margin-bottom: 2%;
 }
 
-.works-list {
-  margin: 100px;
-  padding: 40px;
+
+.dots-item {
+  padding: 20px;
+}
+
+.dots {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  float: right;
+
 }
 
 .dots a {
   border-radius: 100%;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   padding: 0px;
   width: 50px;
   height: 50px;
@@ -249,9 +258,52 @@ nav {
   height: 12px;
 }
 
-.footer {
-  bottom: 22px;
-  left: 0;
-  right: 0;
-  padding: 0 8rem;
+.works-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-top: 4%;
+  align-items: center;
+}
+
+.works-list {
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  justify-content: center;
+  float: right;
+  display: flex;
+  position: relative;
+}
+
+.works img {
+  width: 100%;
+  height: auto;
+}
+
+
+.contact-container {
+  padding: 10%;
+  margin-right: 25%;
+  margin-left: 25%;
+
+}
+
+.header-text {
+  float: left;
+  font-size: 1.5em;
+}
+
+.contacts-menu {
+  float: right;
+  display: inline-block;
+}
+
+dt {
+  font-size: 1.3em;
+}
+
+dl {
+  line-height: 30px;
 }

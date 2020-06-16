@@ -32,7 +32,7 @@ html, body {
 
   background-image: repeating-linear-gradient(90deg, #CCCCD9, #50758C);
   background-attachment: fixed;
-
+  z-index: 0;
 
 }
 
@@ -257,7 +257,15 @@ nav {
   width: 12px;
   height: 12px;
 }
-
+.works-header {
+  font-family: lust-script,sans-serif;
+  font-weight: 400;
+  font-size: 20em;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  z-index: 1;
+}
 .works-container {
   display: flex;
   flex-direction: column;
@@ -282,22 +290,70 @@ nav {
   height: auto;
 }
 
-
 .contact-container {
   padding: 10%;
   margin-right: 25%;
   margin-left: 25%;
-
 }
 
 .header-text {
   float: left;
   font-size: 1.5em;
+  width: 50%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid white;
+  margin-top: 6px;
+  resize: vertical;
+  font-family: proxima-nova,sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  border-radius: 2px;
+  background: transparent;
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  color: white;
+}
+
+button {
+  margin-top: 10%;
+  margin-right: 40%;
+  border: 1px solid white;
+  font-family: proxima-nova,sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  resize: vertical;
+  background: transparent;
+  color: white;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+#email-input {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.works-header {
+  opacity: 0.2;
+  margin-left: 16%;
 }
 
 .contacts-menu {
   float: right;
   display: inline-block;
+  width: 50%:
 }
 
 dt {
@@ -306,4 +362,8 @@ dt {
 
 dl {
   line-height: 30px;
+}
+
+.email-address {
+  margin-bottom: 20%;
 }

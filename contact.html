@@ -45,10 +45,28 @@
     </div>
 
     <div class="contact-container">
-      <div class="header-text">Contact</div>
+       <div class="header-text">
+          <h1>Contact</h1>
+          <form class="contact-form"
+          action="https://formspree.io/xdowzrjy"
+          method="POST">
+
+          <label id="email-input">
+            your email:
+            <br>
+            <input type="text" name="_replyto" placeholder="email@domain.tld">
+          </label>
+
+          <label id="message-input">
+            your message:
+            <br>
+            <textarea name="message" placeholder="Type your message here"></textarea>
+          </label>
+          <button type="submit">Send</button>
+      </div>
+
       <div class="vertical-line"></div>
       <div class="contacts-menu">
-        <div class="first-text">Let's connect!</div>
         <dl>
           <dt class="email">Email</dt>
           <dd class="email-address">
@@ -59,6 +77,10 @@
         </dl>
       </div>
     </div>
+
+    <!-- your other form fields go here -->
+
+  </form>
 
   </body>
 </html>

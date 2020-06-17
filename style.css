@@ -216,13 +216,51 @@ nav {
   margin: 200px;
   display: flex;
   justify-content: center;
+  padding-left: 5%;
 }
+
+.about-bg-text {
+  position: absolute;
+  font-size: 10em;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.05;
+  letter-spacing: 20px;
+  position: absolute;
+  bottom: 42%;
+  pointer-events: none;
+}
+
+.first-name {
+  font-size: 5vw;
+  font-family: lust-script,sans-serif;
+  position: absolute;
+  left: 10%;
+  z-index: 2;
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.last-name {
+  font-size: 6vw;
+  font-family: lust-script,sans-serif;
+  position: absolute;
+  z-index: 2;
+  bottom: 40%;
+  left: 26%;
+  mix-blend-mode: overlay;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
 
 #prof-pic-shadow {
   transform: translateX(-100%);
   width: 20%;
   height: 100%;
-
 }
 
 #prof-pic {
@@ -233,6 +271,13 @@ nav {
   display: flex;
   margin: 0;
   padding: 0;
+  transition: transform .3s, filter 1.5s ease-in-out;
+  filter: grayscale(80%);
+}
+
+#prof-pic:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
 
 .bio {
@@ -373,6 +418,7 @@ li:nth-of-type(3) {
   padding: 10%;
   margin-right: 25%;
   margin-left: 25%;
+  display: flex;
 }
 
 .header-text {
@@ -382,20 +428,13 @@ li:nth-of-type(3) {
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  vertical-align: top;
-  width: 420px;
   height: 100%;
+  width: 100%;
 }
 
-.contact-form-container {
-  float: left;
-}
 
 input[type=text], select, textarea {
-  width: 50%;
+  width: 60%;
   padding: 12px;
   border: 1px solid white;
   margin-top: 6px;
@@ -426,8 +465,8 @@ button {
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  width: 57%;
+  margin-top: 30px;
+  width: 73.5%;
   transition: font-weight .3s ease-in-out;
 }
 
@@ -437,12 +476,6 @@ button:hover {
   letter-spacing: 5px;
   transition: color .5s ease-in-out;
   color: #6E90A6;
-}
-
-
-#email-input {
-  margin-top: 10%;
-  margin-bottom: 10%;
 }
 
 .parent-1, .parent-2, .parent-3 {
@@ -478,7 +511,8 @@ button:hover {
 .contacts-menu {
   float: right;
   display: inline-block;
-  width: 50%:
+  border-left: solid;
+  border-width: thin;
 }
 
 dt {
@@ -488,10 +522,11 @@ dt {
 
 dl {
   line-height: 30px;
+  margin: 62px 0 0 30px;
 }
 
 .email-address {
-  margin-bottom: 20%;
+  margin-bottom: 30%;
 }
 
 footer {

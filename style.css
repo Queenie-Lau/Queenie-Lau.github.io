@@ -436,6 +436,17 @@ button {
   margin-bottom: 10%;
 }
 
+.parent-1 {
+  position: relative;
+}
+
+.over-img-1 {
+  position: absolute;
+  top: -23.5%;
+  left: 39%;
+  transform: scale(0.02);
+}
+
 .works-header {
   opacity: 0.2;
   margin-left: 16%;

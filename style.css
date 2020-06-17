@@ -261,10 +261,11 @@ nav {
   font-family: lust-script,sans-serif;
   font-weight: 400;
   font-size: 20em;
+  font-size: 15vw;
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  z-index: 1;
+
 }
 .works-container {
   display: flex;
@@ -290,6 +291,11 @@ nav {
   height: auto;
 }
 
+.content {
+  display: flex;
+  direction: row;
+  overflow: hidden;
+}
 .contact-container {
   padding: 10%;
   margin-right: 25%;
@@ -305,6 +311,14 @@ nav {
 .contact-form {
   display: flex;
   flex-direction: column;
+  align-items: left;
+  vertical-align: top;
+  width: 420px;
+  height: 100%;
+}
+
+.contact-form-container {
+  float: left;
 }
 
 input[type=text], select, textarea {
@@ -326,19 +340,20 @@ input::placeholder, textarea::placeholder {
 }
 
 button {
-  margin-top: 10%;
-  margin-right: 40%;
   border: 1px solid white;
   font-family: proxima-nova,sans-serif;
   font-weight: 100;
   font-style: normal;
   resize: vertical;
-  background: transparent;
+  background: linear-gradient(-90deg, #6E90A6, #50758C);
   color: white;
   border-radius: 2px;
-  padding: 20px;
   font-size: 1em;
   text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 57%;
 }
 #email-input {
   margin-top: 10%;
@@ -358,6 +373,7 @@ button {
 
 dt {
   font-size: 1.3em;
+  font-weight: 400;
 }
 
 dl {

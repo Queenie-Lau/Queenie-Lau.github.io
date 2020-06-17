@@ -212,36 +212,34 @@ nav {
   justify-content: center;
 }
 
-.profile-pic {
-  margin: 100px;
-  padding-top: 100px;
-  padding-left: 100px;
+.about-me-container {
+  margin: 200px;
   display: flex;
   justify-content: center;
-  /* width: 50%;
-  min-width:100px; */
 }
 
 #prof-pic-shadow {
   transform: translateX(-100%);
-  width: auto;
+  width: 20%;
   height: 100%;
+
 }
 
 #prof-pic {
   z-index: 1;
-  transform: scale(1.2);
   object-fit: contain;
-  width: auto;
+  width: 20%;
   height: 100%;
-
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .bio {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
 }
+
 #first, #second {
   font-family: proxima-nova, sans-serif;
   font-weight: 200;

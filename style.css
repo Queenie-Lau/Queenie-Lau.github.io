@@ -436,7 +436,7 @@ button {
   margin-bottom: 10%;
 }
 
-.parent-1 {
+.parent-1, .parent-2, .parent-3 {
   position: relative;
 }
 
@@ -446,6 +446,20 @@ button {
   left: 39%;
   transform: scale(0.02);
 }
+.over-img-2 {
+  position: absolute;
+  top: -24.5%;
+  left: 39%;
+  transform: scale(0.02);
+}
+
+.over-img-3 {
+  position: absolute;
+  top: -7%;
+  left: 39%;
+  transform: scale(0.02);
+}
+
 
 .works-header {
   opacity: 0.2;

@@ -219,13 +219,13 @@ nav {
 
 .about-bg-text {
   position: absolute;
-  font-size: 10em;
+  font-size: 20vw;
   font-weight: bold;
   text-transform: uppercase;
   opacity: 0.05;
   letter-spacing: 20px;
   position: absolute;
-  bottom: 42%;
+  bottom: 40%;
   pointer-events: none;
 }
 
@@ -233,7 +233,7 @@ nav {
   font-size: 5vw;
   font-family: lust-script,sans-serif;
   position: absolute;
-  left: 10%;
+  left: -20%;
   z-index: 2;
   mix-blend-mode: overlay;
   width: 100%;
@@ -246,36 +246,38 @@ nav {
   font-family: lust-script,sans-serif;
   position: absolute;
   z-index: 2;
-  bottom: 40%;
-  left: 26%;
+  margin-top: 50%;
+  margin-left: 20%;
   mix-blend-mode: overlay;
   width: 100%;
   height: auto;
   pointer-events: none;
 }
 
+.left-side {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  height: auto;
+}
 
-#prof-pic-shadow {
-  transform: translateX(-100%);
-  width: 20%;
-  height: 100%;
+.right-side {
+  width: 50%;
 }
 
 #prof-pic {
-  z-index: 1;
-  object-fit: contain;
-  width: 20%;
-  height: 100%;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  transition: transform .3s, filter 1.5s ease-in-out;
+  width: 50%;
+  height: auto;
+  transition: transform .3s, filter 1s ease-in-out;
   filter: grayscale(80%);
+  transform: perspective(0rem);
+  transform: rotate(0deg);
 }
 
 #prof-pic:hover {
   filter: grayscale(0);
   transform: scale(1.1);
+  transform: skew(-.5deg, -.9deg);
 }
 
 .bio {
@@ -290,7 +292,7 @@ nav {
   color: white;
   line-height: 2;
   margin-right: 15%;
-  font-size:.8vw;
+  font-size: 1vw;
 }
 
 #first a, #second a {
@@ -302,6 +304,10 @@ nav {
 #first {
   margin-bottom: 2%;
 }
+
+/* #first a:hover {
+  background: #aaa url(lucidity.png);
+} */
 
 
 .dots-item {

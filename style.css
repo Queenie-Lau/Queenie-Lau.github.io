@@ -124,6 +124,7 @@ nav {
   height: auto;
   font-weight: 100;
   text-transform: uppercase;
+  transform: translateX(-120%);
   display: flex;
   align-items: flex-end;
 }
@@ -418,6 +419,10 @@ li:nth-of-type(3) {
   pointer-events: none;
 }
 
+#contact-header {
+  margin-right: 40px;
+}
+
 .contact-container {
   padding: 10%;
   margin-right: 25%;
@@ -471,13 +476,9 @@ button {
   align-items: center;
   margin-top: 30px;
   width: 73.5%;
-  transition: font-weight .3s ease-in-out;
 }
 
 button:hover {
-  font-weight: bold;
-  transition: font-weight .3s ease-in-out;
-  letter-spacing: 5px;
   transition: color .5s ease-in-out;
   color: #6E90A6;
 }

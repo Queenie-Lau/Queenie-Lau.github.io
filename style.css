@@ -483,7 +483,7 @@ button:hover {
   color: #6E90A6;
 }
 
-.parent-1, .parent-2, .parent-3 {
+.parent-1, .parent-2, .parent-3, .parent-4 {
   position: relative;
 }
 
@@ -503,6 +503,13 @@ button:hover {
 .over-img-3 {
   position: absolute;
   top: -7%;
+  left: 39%;
+  transform: scale(0.02);
+}
+
+.over-img-4 {
+  position: absolute;
+  top: -6%;
   left: 39%;
   transform: scale(0.02);
 }

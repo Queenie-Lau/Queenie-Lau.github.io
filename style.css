@@ -240,6 +240,22 @@ nav {
   width: 100%;
   height: auto;
   pointer-events: none;
+  animation-duration: 3s;
+  animation-name: slidedown;
+  animation-fill-mode: both;
+}
+
+@keyframes leftslide {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    transition-timing-function: ease;
+  }
+
+  to {
+    transform: translateX(-2%);
+    opacity: 1;
+  }
 }
 
 .last-name {
@@ -253,6 +269,9 @@ nav {
   width: 100%;
   height: auto;
   pointer-events: none;
+  animation-duration: 3s;
+  animation-name: leftslide;
+  animation-fill-mode: both;
 }
 
 .left-side {
@@ -274,7 +293,7 @@ nav {
   transform: perspective(0rem);
   transform: rotate(0deg);
   animation-duration: 3s;
-  animation-name: slidein;
+  animation-name: slidedown;
   animation-fill-mode: both;
   animation-direction: alternate;
 }
@@ -289,7 +308,7 @@ nav {
   display: flex;
   flex-direction: column;
   animation-duration: 3s;
-  animation-name: slidein;
+  animation-name: slidedown;
   animation-fill-mode: both;
   animation-direction: alternate;
 }
@@ -412,6 +431,19 @@ li:nth-of-type(3) {
   from {
     opacity: 0;
     transform: translateX(-20%);
+    transition-timing-function: ease;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
     transition-timing-function: ease;
   }
 

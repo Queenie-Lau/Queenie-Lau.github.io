@@ -63,6 +63,71 @@
         〈 Made with <i class="material-icons" style="transform: scale(0.6) translateY(10px)">favorite</i> by Queenie /〉
       </div>
     </footer>
+
+    <style>
+      @media (max-width: 600px) {
+        nav {
+          display: none;
+        }
+    
+     .q-logo {
+       margin-left: 10%;
+     }
+     .about-me-container {
+       padding: 0;
+       margin: 0;
+       display: block;
+     }
+
+     .left-side{
+       width: 100%;
+       margin-top: 40%;
+     }
+     
+     #first, #second {
+       font-size: 10px;
+       margin-bottom: 5%;
+       animation: slidedown;
+       animation-duration: 3s;
+     }
+
+     .bio {
+      padding-left: 30%;
+      width: 100%;
+      margin-top: 20%;
+      margin-left: 30%;
+      animation: slidedown;
+     }
+     
+     .last-name, .first-name {
+        display: none;
+     }
+
+     #prof-pic {
+      display: none;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+     }
+
+     #prof-pic:hover {
+      filter: grayscale(0);
+      transform: skew(-.5deg, -.9deg);
+    }
+
+     .footer {
+      transform: scale(.8);
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .about-bg-text {
+      font-size: 80px;
+      margin-left: 20%;
+    }
+  }
+  </style>
     
   </body>
 </html>

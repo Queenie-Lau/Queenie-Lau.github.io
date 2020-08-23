@@ -273,6 +273,10 @@ nav {
   filter: grayscale(80%);
   transform: perspective(0rem);
   transform: rotate(0deg);
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-fill-mode: both;
+  animation-direction: alternate;
 }
 
 #prof-pic:hover {
@@ -284,6 +288,10 @@ nav {
 .bio {
   display: flex;
   flex-direction: column;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-fill-mode: both;
+  animation-direction: alternate;
 }
 
 #first, #second {

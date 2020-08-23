@@ -486,6 +486,12 @@ button:hover {
 .parent-1, .parent-2, .parent-3, .parent-4 {
   position: relative;
 }
+.over-img-0 {
+  position: absolute;
+  top: -76%;
+  left: 35%;
+  transform: scale(0.015);
+}
 
 .over-img-1 {
   position: absolute;

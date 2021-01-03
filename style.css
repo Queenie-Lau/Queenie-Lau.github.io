@@ -123,8 +123,10 @@ nav {
   width: 10%;
   height: auto;
   font-weight: 100;
+  margin-left: .001%;
+  transform: translateY(-40px);;
   text-transform: uppercase;
-  transform: translateX(-120%);
+  position: relative;
   display: flex;
   align-items: flex-end;
 }
@@ -173,7 +175,7 @@ nav {
   width: 10%;
   height: 10%;
   justify-content: center;
-  top: 5%;
+  top: 2%;
   left: 5%;
 }
 
@@ -377,9 +379,9 @@ nav {
 .works-container {
   display: flex;
   flex-direction: column;
-  margin-right: 30%;
-  margin-left: 30%;
-  margin-top: 4%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 5%;
   align-items: center;
 }
 
@@ -652,7 +654,7 @@ dl {
 
 footer {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   position: fixed;
   left: 0;
   bottom: 0;

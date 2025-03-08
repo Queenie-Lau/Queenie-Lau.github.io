@@ -4615,11 +4615,12 @@ figcaption {
   box-sizing: border-box;
   aspect-ratio: auto;
   object-fit: fill;
-  width: 50%;
+  width: 100%;
   max-width: 80%;
   margin-bottom: 5%;
   margin-left: 0%;
   margin-right: auto;
+  margin-top: 5%;
   padding-left: 0%;
   padding-right: 0%;
   display: block;
@@ -4647,13 +4648,13 @@ figcaption {
 }
 
 .div-block-5 {
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  justify-content: space-around;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 0%;
   padding-bottom: 5%;
-  padding-left: 10%;
+  padding-left: 0%;
   display: flex;
 }
 

@@ -6816,3 +6816,23 @@ figcaption {
 .fade-in {
   opacity: 1;
 }
+
+#cats-text::before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  right: 30%;
+  width: 100px;
+  height: 80px;
+  background-image: url('/images/hello-cat.gif');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#cats-text:hover::before {
+  opacity: 1;
+  /* Show the GIF on hover */
+}

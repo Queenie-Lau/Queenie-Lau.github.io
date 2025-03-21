@@ -5020,6 +5020,32 @@ figcaption {
   line-height: 1.15;
 }
 
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px 0 #850c08, -2px -2px 0 rgb(3, 3, 79);
+  }
+
+  25% {
+    text-shadow: -2px -2px 0 #850c08, 2px 2px 0 rgb(8, 8, 44);
+  }
+
+  50% {
+    text-shadow: 2px -2px 0 #850c08, -2px 2px 0 rgb(3, 3, 79);
+  }
+
+  75% {
+    text-shadow: -2px 2px 0 #850c08, 2px -2px 0 rgb(26, 26, 149);
+  }
+
+  100% {
+    text-shadow: 2px 2px 0 #850c08, -2px -2px 0 rgb(3, 3, 79);
+  }
+}
+
+#glitch:hover {
+  animation: glitch 3s infinite;
+}
+
 .large-heading.offset-right {
   font-weight: 700;
 }
@@ -6780,4 +6806,13 @@ figcaption {
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+}
+
+.fade {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }

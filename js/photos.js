@@ -3,18 +3,8 @@ const body = document.body;
 
 photosElement.addEventListener('mouseenter', async () => {
   body.classList.add('fade');
-
-  setTimeout(async () => {
-    await loadContent();
-    body.classList.remove('fade');
-    body.classList.add('fade-in');
-
-    setTimeout(() => {
-        sessionStorage.setItem('scrollToAbout', 'true');
-        window.location.href = window.location.origin + window.location.pathname + "#about";
-        location.reload();
-    }, 8000);
-  }, 1000);
+  body.classList.add('fade-in');
+  await loadContent();
 });
 
 const loadContent = async () => {

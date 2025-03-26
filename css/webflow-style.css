@@ -6836,3 +6836,22 @@ figcaption {
   opacity: 1;
   /* Show the GIF on hover */
 }
+
+#photos-text {
+  display: inline-block;
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

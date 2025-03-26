@@ -52,8 +52,8 @@ h1 {
 }
 
 mark {
-  color: #000;
-  background: #ff0;
+  color:#14274E;
+  background: #F1F6F9;
 }
 
 small {
@@ -220,8 +220,8 @@ html {
 }
 
 body {
-  color: #333;
-  background-color: #fff;
+  color: #14274E;
+  background-color: #F1F6F9;
   min-height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -2055,8 +2055,8 @@ textarea.w-input, textarea.w-select {
 }
 
 :root {
-  --color--black: black;
-  --color--white: white;
+  --color--black: #091120;
+  --color--white: #F1F6F9;
   --font-family--heading: Geist, sans-serif;
   --font-size-desktop--main: 1.5rem;
   --font-size-desktop--small: 1rem;
@@ -4654,7 +4654,7 @@ figcaption {
   align-items: center;
   margin-top: 0%;
   padding-bottom: 5%;
-  padding-left: 0%;
+  padding-left: 10%;
   display: flex;
 }
 
